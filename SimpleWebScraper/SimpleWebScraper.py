@@ -20,7 +20,6 @@ def open_website(*args):
     kickstarter_page = html_page.read()
     scraping_data = manipulate_webpage(str(kickstarter_page))
 
-    print(scraping_data)
     file = open(filepath, 'r')
     lines = file.readlines();
     
@@ -38,6 +37,7 @@ def open_website(*args):
 def main():
     ## create timer arguments as a tuple
     args = ("https://www.kickstarter.com/projects/coolminiornot/zombicide-black-plague", "../ScrapingData/BlackPlague.txt")
+    #args = ("https://www.kickstarter.com/projects/loneshark/the-apocrypha-adventure-card-game", "../ScrapingData/BlackPlague.txt") # TODO: need to work out what  to do with ended projects
     scraper_timer = ScraperTimer.ScraperTimer(10, open_website, *args)
     scraper_timer.start()
 
