@@ -1,0 +1,2 @@
+syntax: glob
+SimpleWebScraper/__pycache__/*
