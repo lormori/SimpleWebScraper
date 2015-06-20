@@ -1,4 +1,4 @@
-from threading import Timer
+﻿from threading import Timer
 
 class ScraperTimer(object):
 

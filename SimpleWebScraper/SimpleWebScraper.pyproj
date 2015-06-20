@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c24aebb5-5803-461f-848c-d039bb017542</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SimpleWebScraper.py</StartupFile>
+    <StartupFile>Initializer.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="JsonDataWrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Initializer.py" />
     <Compile Include="SimpleWebScraper.py" />
     <Compile Include="ScraperTimer.py" />
   </ItemGroup>
