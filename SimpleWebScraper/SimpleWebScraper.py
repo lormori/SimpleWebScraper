@@ -1,4 +1,4 @@
-﻿import urllib.request
+﻿import urllib2
 import re
 import ScraperTimer
 import JsonDataWrapper
@@ -15,10 +15,11 @@ def open_website(*args):
 
     print("Opening", site_name,"...")
 
-    html_page = urllib.request.urlopen(site_name)
+    html_page = urllib2.urlopen(site_name)
     kickstarter_page = html_page.read()
+    print kickstarter_page
     scraping_data = scrape_webpage(str(kickstarter_page))
-
+    print scraping_data
     jsonWrapper = JsonDataWrapper.JsonDataWrapper(filepath)
     jsonWrapper.LoadJsonData()
 

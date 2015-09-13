@@ -1,1 +1,1 @@
-{"ZombicideBlackPlague": [{"PledgeAmount": "$2,027,253", "Date": "2015-06-21 00:02:59.281906"}, {"PledgeAmount": "$2,027,393", "Date": "2015-06-21 00:04:08.984823"}]}
+{"ZombicideBlackPlague": [{"Date": "2015-06-21 00:02:59.281906", "PledgeAmount": "$2,027,253"}, {"Date": "2015-06-21 00:04:08.984823", "PledgeAmount": "$2,027,393"}]}

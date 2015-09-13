@@ -23,7 +23,7 @@ class JsonDataWrapper(object):
             with open(self.filePath , 'r') as file:
                 self.jsonData = json.load(file)
         except ValueError:
-            print("data was not valid JSON")
+            print "data was not valid JSON"
             self.jsonData = {}
             self.jsonData[self.projectName] = []
         return
